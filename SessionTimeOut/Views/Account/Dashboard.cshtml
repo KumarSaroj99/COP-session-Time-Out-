@@ -1,0 +1,27 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Dashboard</title>
+</head>
+<body>
+    <div>
+        @{
+            ViewBag.Title = "Dashboard";
+        }
+
+        <h2>Welcome, @ViewBag.Username!</h2>
+
+        <p>You are now logged in.</p>
+
+        @Html.ActionLink("Logout", "Logout", "Account", new { }, new { @class = "btn btn-danger" })
+
+    </div>
+</body>
+</html>
